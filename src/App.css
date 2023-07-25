@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Style par défaut pour les écrans supérieurs à 1024px */
+.hero {
+    height: 100vh;
+    background: url("../public/images/image1.jpg");
+}
+
+/* Media Query pour les écrans inférieurs ou égaux à 1024px */
+@media screen and (max-width: 1024px) {
+    .hero {
+        height: 100%;
+        /* Vous pouvez ajuster cette valeur selon vos besoins */
+    }
+}
