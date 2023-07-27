@@ -1,31 +1,22 @@
-import { useState } from 'react'
-import Navbar from './common/Navbar'
-import './App.css'
-import Hero from './common/Hero'
-import Cta from './common/Cta'
-import Content from './common/Content'
-import Features from './common/Features'
-import Team from './common/Team'
-import Footer from './common/Footer'
-import Gallery from './common/Gallery'
-import Conact from './common/Conact'
+import { Routes, Route,  Link } from "react-router-dom";
+import Landing from "./landing/Landing";
+import Cgv from "./cgv/Cgv";
+import Layout from "./layout/Layout";
 
-function App() {
-  const [count, setCount] = useState(0)
 
+export default function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Cta />
-      <Content />
-      <Features />
-      <Gallery />
-      <Team />
-      <Conact />
-      <Footer />
-    </>
-  )
-}
+    <div>
+       <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Landing />} />
+          <Route path="cgv" element={<Cgv />} />
+        
 
-export default App
+     
+          <Route path="*" element={<Landing />} />
+        </Route>
+      </Routes>
+    </div>
+  );
+}
