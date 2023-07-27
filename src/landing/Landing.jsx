@@ -2,27 +2,25 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../App.css';
-import Navbar from '../common/Navbar';
 import Hero from '../common/Hero';
-import Footer from '../common/Footer';
+import Zigzag from '../landing/Zigzag';
+import Testimonials from '../landing/Testimonials';
+
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      // Add your configuration options here, if needed
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true,
-    });
+  // Initialisez AOS
+  React.useEffect(() => {
+    AOS.init();
   }, []);
+
 
   return (
     <>
-      <Navbar />
       <Hero />
-      <Footer />
+      <Zigzag />
+      <Testimonials />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../App.css';
 import Navbar from '../common/Navbar';
-import Hero from '../common/Hero';
+import Landing from '../landing/Landing';
 import Footer from '../common/Footer';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
     return (
         <>
             <Navbar />
-            <Hero />
+            <Landing />
             <Footer />
         </>
     );
