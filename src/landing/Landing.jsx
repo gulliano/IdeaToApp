@@ -6,21 +6,21 @@ import Features from '../common/Features'
 import Team from '../common/Team'
 import Footer from '../common/Footer'
 import Gallery from '../common/Gallery'
-import Conact from '../common/Conact'
+import Contact from '../common/Contact'
 import Navbar from '../common/Navbar'
 
 const Landing = () => {
   return (
     <>
-    <Navbar />
-       {/*<Hero />*/}
-     {/* <Cta /> */}
+      <Navbar />
+      {/*<Hero />*/}
+      {/* <Cta /> */}
       <Content />
-       {/*<Features />
+      {/*<Features />
       <Gallery />
       <Team />
-      <Conact />*/}
-      <Footer />   
+      <Contact />*/}
+      <Footer />
     </>
   )
 }
