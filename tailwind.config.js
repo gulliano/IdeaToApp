@@ -11,11 +11,23 @@ export default {
     themes: [
       {
         mytheme: {
-          "primary": "#a991f7",
-          "secondary": "#f6d860",
-          "accent": "#37cdbe",
-          "neutral": "#3d4451",
-          "base-100": "#ffffff",
+          "primary": "#d6ba1b",
+
+          "secondary": "#7a75d8",
+
+          "accent": "#e876cf",
+
+          "neutral": "#242a2e",
+
+          "base-100": "#4b3456",
+
+          "info": "#667ff0",
+
+          "success": "#2dd793",
+
+          "warning": "#977111",
+
+          "error": "#e56675",
 
           "--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes
           "--rounded-btn": "0.5rem", // border radius rounded-btn utility class, used in buttons and similar element
@@ -30,11 +42,11 @@ export default {
         },
       },
       "dark",
-      "retro",
+      "mytheme",
     ],
   },
-plugins: [
-  require("daisyui"),
-],
+  plugins: [
+    require("daisyui"),
+  ],
 }
 
