@@ -1,11 +1,33 @@
-import React from 'react'
+import React , {useState} from 'react'
 import { useDispatch } from 'react-redux'
-import { plus, moins , reset } from '../../redux';
+import { plus,  addInscription } from '../../redux';
+
 
 const Presentation = () => {
   const dispatch = useDispatch() ;
+
+  const [nom, setNom] = useState('gustave')
+  const [prenom, setPrenom] = useState('gulliano')
+
+  const handleSubmit = (event) => { 
+    event.preventDefault() ;
+    
+    //const { nom , prenom} =  event.target ;
+  console.log('prenom :  ' ,event.target  ) ;
+
+
+   const info = { nom : nom, 
+                  prenom : prenom,
+                            
+      }
+     console.log("infoStagiaire" , info) 
+   dispatch(addInscription(info)) ; 
+   // dispatch(plus())
+
+   }
   return (
     <div className="hero min-h-screen bg-base-200">
+      <form onSubmit={handleSubmit} >
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
       <h1 className="text-5xl font-bold">Pour commencer présente toi ?</h1>
@@ -15,25 +37,26 @@ const Presentation = () => {
       <div className="card-body">
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Mon nom</span>
+            <span className="label-text">Ton nom</span>
           </label>
-          <input type="text" placeholder="Mon nom" className="input input-bordered" />
+          <input type="text"  onChange={event=>setNom(event.target.value)} value={nom}  name='prenom' placeholder="Nom"   className="input input-bordered" />
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Mon prénom</span>
+            <span className="label-text">Ton prénom</span>
           </label>
-          <input type="text" placeholder="Mon Prénom" className="input input-bordered" />
+          <input type="text"   onChange={event=>setPrenom(event.target.value)} value={prenom}  name='prenom' placeholder="Prénom" className="input input-bordered" />
           <label className="label hidden">
                 Forgot password? 
           </label>
         </div>
         <div className="form-control mt-6">
-          <button onClick={()=>dispatch(plus()) } className="btn btn-primary">Etape suivante </button>
+          <button type='submit' className="btn btn-primary">Etape suivante </button>
         </div>
       </div>
     </div>
   </div>
+  </form>
 </div>
   )
 }
