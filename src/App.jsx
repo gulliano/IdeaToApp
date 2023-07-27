@@ -12,8 +12,6 @@ export default function App() {
           <Route index element={<Landing />} />
           <Route path="cgv" element={<Cgv />} />
 
-
-
           <Route path="*" element={<Landing />} />
         </Route>
       </Routes>
