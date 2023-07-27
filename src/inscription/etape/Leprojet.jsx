@@ -1,6 +1,10 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { plus, moins , reset } from '../../redux';
 
 const Leprojet = () => {
+  const dispatch = useDispatch() ;
+
   return (
     <div className="hero min-h-screen bg-base-200">
   <div className="hero-content flex-col lg:flex-row-reverse">
@@ -28,7 +32,7 @@ const Leprojet = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
+          <button onClick={()=>dispatch(plus()) } className="btn btn-primary">Login</button>
         </div>
       </div>
     </div>
