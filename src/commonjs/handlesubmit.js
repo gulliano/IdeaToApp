@@ -5,7 +5,11 @@ const handleSubmit = (testdata) => {
     const ref = collection(firestore, "contact") // Firebase creates this automatically
  
     let data = {
-        email: testdata
+        nom: testdata ,
+        prenom: testdata ,
+        email: testdata ,
+        message: testdata ,
+
     }
     
     try {
