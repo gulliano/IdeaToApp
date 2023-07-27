@@ -6,7 +6,7 @@ import FeatImage03 from '/images/features-03-image-03.png'
 
 const zigzag = () => {
     return (
-        <section>
+        <section className='bg-base-200'>
             <div className="max-w-6xl mx-auto px-4 sm:px-6" id='Zigzag'>
                 <div className="py-12 md:py-20 border-t border-gray-800">
 

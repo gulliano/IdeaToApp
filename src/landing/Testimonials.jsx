@@ -6,9 +6,9 @@ import TestimonialImage03 from '/images/testimonial-03.jpg'
 
 const Testimonials = () => {
     return (
-        <section>
+        <section className='bg-base-100'>
             <div className="max-w-6xl mx-auto px-4 sm:px-6" id='Testimonials'>
-                <div className="py-12 md:py-20 border-t border-gray-800">
+                <div className="flex flex-col items-center justify-center min-h-screen py-12 md:py-20 border-t border-gray-800">
 
                     {/* Section header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">

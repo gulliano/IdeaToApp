@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 fixed z-50" id='Navbar'>
+        <div className="navbar bg-base-200 fixed z-50" id='Navbar'>
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -10,6 +10,8 @@ const Navbar = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a>Accueil</a></li>
+                        <li><a>Concours</a></li>
+                        <li><a>Qui sommes nous?</a></li>
                         <li><a>Inscription</a></li>
                         <li><a>CGV</a></li>
                     </ul>
@@ -19,6 +21,8 @@ const Navbar = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li><a>Accueil</a></li>
+                    <li><a>Concours</a></li>
+                    <li><a>Qui sommes nous?</a></li>
                     <li><a>Inscription</a></li>
                     <li><a>CGV</a></li>
                 </ul>
