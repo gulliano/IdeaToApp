@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import '../App.css';
 import Hero from '../common/Hero';
 import Zigzag from '../landing/Zigzag';
+import About from '../landing/About';
 import Testimonials from '../landing/Testimonials';
 
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
       <Hero />
+      <About />
       <Zigzag />
       <Testimonials />
     </>

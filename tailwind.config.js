@@ -12,21 +12,13 @@ export default {
       {
         mytheme: {
           "primary": "#d6ba1b",
-
           "secondary": "#7a75d8",
-
           "accent": "#e876cf",
-
           "neutral": "#242a2e",
-
           "base-100": "#4b3456",
-
           "info": "#667ff0",
-
           "success": "#2dd793",
-
           "warning": "#977111",
-
           "error": "#e56675",
 
           "--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes
