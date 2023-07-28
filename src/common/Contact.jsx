@@ -8,8 +8,10 @@ const Conact = () => {
  
     const submithandler = (e) => {
         e.preventDefault()
+      const  { nom ,  prenom , email , message} = e.target ;
+      console.log(' nom ,  prenom , email , message' ,  nom.value ,  prenom.value , email.value , message.value) ; 
         handleSubmit(dataRef.current.value)
-        dataRef.current.value = ""
+       dataRef.current.value = ""
     }
     
     return (
