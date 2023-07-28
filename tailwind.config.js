@@ -1,60 +1,36 @@
 /** @type {import('tailwindcss').Config} */
-
-import colors from 'tailwindcss/colors'
-
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/flowbite/**/*.js",
   ],
-  darkMode: 'class',
   theme: {
-    extend: {
-      colors: {
-        primary: { "50": "#eff6ff", "100": "#dbeafe", "200": "#bfdbfe", "300": "#93c5fd", "400": "#60a5fa", "500": "#3b82f6", "600": "#2563eb", "700": "#1d4ed8", "800": "#1e40af", "900": "#1e3a8a" }
-      }
-    },
-    fontFamily: {
-      'body': [
-        'Inter',
-        'ui-sans-serif',
-        'system-ui',
-        '-apple-system',
-        'system-ui',
-        'Segoe UI',
-        'Roboto',
-        'Helvetica Neue',
-        'Arial',
-        'Noto Sans',
-        'sans-serif',
-        'Apple Color Emoji',
-        'Segoe UI Emoji',
-        'Segoe UI Symbol',
-        'Noto Color Emoji'
-      ],
-      'sans': [
-        'Inter',
-        'ui-sans-serif',
-        'system-ui',
-        '-apple-system',
-        'system-ui',
-        'Segoe UI',
-        'Roboto',
-        'Helvetica Neue',
-        'Arial',
-        'Noto Sans',
-        'sans-serif',
-        'Apple Color Emoji',
-        'Segoe UI Emoji',
-        'Segoe UI Symbol',
-        'Noto Color Emoji'
-      ]
-    }
+    extend: {},
+  },
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          ".text-title": {
+            "color": "#FF0000",
+          },
+          "primary": "#FF0000",
+          "secondary": "#f000b8",
+          "accent": "#1dcdbc",
+          "neutral": "#2b3440",
+          "base-100": "#ffffff",
+          "info": "#3abff8",
+          "success": "#36d399",
+          "warning": "#fbbd23",
+          "error": "#f87272",
+        },
+      },
+      "dark",
+      "retro",
+    ],
   },
   plugins: [
     require("daisyui"),
-    require('flowbite/plugin'),
   ],
 }
 
