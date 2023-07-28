@@ -20,6 +20,7 @@ const Conact = () => {
                 <div className="hero min-h-screen bg-base-200">
                     <div className="hero-content flex-col lg:flex-row-reverse">
                         <div className="text-center min-w-lg lg:text-left">
+                            <h1>hello</h1>
                             <h1 className="text-5xl font-bold">Contactez-nous !</h1>
                             <p className="py-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At repellendus unde ut, perspiciatis expedita dicta?</p>
                         </div>
