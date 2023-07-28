@@ -14,6 +14,9 @@ export default {
           ".text-title": {
             "color": "#FF0000",
           },
+          ".text-title-secondary": {
+            "color": "#FBBF24",
+          },
           "primary": "#FF0000",
           "secondary": "#f000b8",
           "accent": "#1dcdbc",

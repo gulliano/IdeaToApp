@@ -6,11 +6,11 @@ const Cgv = () => {
     <div className="hero  pt-60 bg-white ">
       <div className="hero-content text-center ">
         <div className="">
-          <h1 className="text-5xl font-bold pb-5 text-pink-600">
+          <h1 className="text-5xl font-bold pb-5 text-title">
             CONDITIONS GENERALES DU CONCOURS 
             
           </h1>
-          <h2 className="text-5xl font-bold pb-20 text-amber-400 ">"Une idée, Une App"</h2>
+          <h2 className="text-5xl font-bold pb-20 text-title-secondary ">"Une idée, Une App"</h2>
           <h2 className="text-4xl pt-7 font-bold ">Préambule</h2>
           <p className="py-6 pb-20">
           "une idée une application" est un concours organisé par la team CDA 2023 stagiaires à l'IMFPA en Martinique.

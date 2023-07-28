@@ -5,6 +5,7 @@ import '../App.css';
 import Navbar from '../common/Navbar';
 import Landing from '../landing/Landing';
 import Footer from '../common/Footer';
+import { Outlet} from "react-router-dom"; 
 
 function App() {
     useEffect(() => {
@@ -19,7 +20,8 @@ function App() {
     return (
         <>
             <Navbar />
-            <Landing />
+            {/* <Landing /> */}
+            <Outlet />
             <Footer />
         </>
     );
