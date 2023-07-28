@@ -12,7 +12,7 @@ const Presentation = () => {
   const handleSubmit = (event) => { 
     event.preventDefault() ;
     
-    //const { nom , prenom} =  event.target ;
+  //const { nom , prenom} =  event.target ;
   console.log('prenom :  ' ,event.target  ) ;
 
 
@@ -20,11 +20,16 @@ const Presentation = () => {
                   prenom : prenom,
                             
       }
-     console.log("infoStagiaire" , info) 
-   dispatch(addInscription(info)) ; 
+
+    const changeNom = (event) => {
+      setNom(event.target.value)
+    }
+        console.log("infoStagiaire" , info) 
+      dispatch(addInscription(info)) ; 
    // dispatch(plus())
 
    }
+
   return (
     <div className="hero min-h-screen bg-base-200">
       <form onSubmit={handleSubmit} >
@@ -39,7 +44,7 @@ const Presentation = () => {
           <label className="label">
             <span className="label-text">Ton nom</span>
           </label>
-          <input type="text"  onChange={event=>setNom(event.target.value)} value={nom}  name='prenom' placeholder="Nom"   className="input input-bordered" />
+          <input type="text"  onChange={event=>changeNom(event)} value={nom}  name='prenom' placeholder="Nom"   className="input input-bordered" />
         </div>
         <div className="form-control">
           <label className="label">
@@ -47,7 +52,7 @@ const Presentation = () => {
           </label>
           <input type="text"   onChange={event=>setPrenom(event.target.value)} value={prenom}  name='prenom' placeholder="Prénom" className="input input-bordered" />
           <label className="label hidden">
-                Forgot password? 
+               Tu dois saissir ton prénom 
           </label>
         </div>
         <div className="form-control mt-6">
