@@ -53,40 +53,40 @@ const Contact = () => {
                 <div className="hero min-h-screen bg-base-200">
                     <div className="hero-content flex-col lg:flex-row-reverse">
                         <div className="text-center min-w-lg lg:text-left">
-                            <h1 className="text-5xl font-bold">Contactez-nous !</h1>
+                            <h1 className="text-5xl font-bold text-title">Contactez-nous !</h1>
                             <p className="py-6">Envie de plus d’explications ? Ou de précisions sur un élément ? N’hésite pas, envoie nous un message via le formulaire ci-contre pour des éclaircissements</p>
                         </div>
                         <div className="card flex-shrink-0 w-full max-w-lg min-h-fit shadow-2xl bg-base-100">
                             <div className="card-body">
                                 <div className="form-control">
-                                    <input type="text" ref={dataRef} value={fnom} onChange={(event=>setNom(event.target.value))} name="nom" placeholder="Nom" className="input input-bordered" />
+                                    <input type="text" ref={dataRef} value={fnom} onChange={(event=>setNom(event.target.value))} name="nom" placeholder="Nom" className="input input-bordered text-title-secondary" />
                                     {errorNom&&<label className="label">
-                                        <span className="label-text-alt text-pink-600">Vous devez saisir votre nom !</span>
+                                        <span className="label-text-alt text-error">Vous devez saisir votre nom !</span>
                                     </label>}
                                 </div>
 
                                 <div className="form-control">
-                                    <input type="text" ref={dataRef} value={fprenom} onChange={(event=>setPrenom(event.target.value))} name="prenom" placeholder="Prenom" className="input input-bordered" />
+                                    <input type="text" ref={dataRef} value={fprenom} onChange={(event=>setPrenom(event.target.value))} name="prenom" placeholder="Prenom" className="input input-bordered text-title-secondary" />
                                     {errorPrenom&&<label className="label">
-                                        <span className="label-text-alt text-pink-600">Vous devez saisir votre prenom !</span>
+                                        <span className="label-text-alt text-error">Vous devez saisir votre prenom !</span>
                                     </label>}  
                                 </div>
 
                                 <div className="form-control">
-                                    <input type="text" ref={dataRef} value={femail} onChange={(event=>setEmail(event.target.value))} name="email" placeholder="Email" className="input input-bordered" />
+                                    <input type="text" ref={dataRef} value={femail} onChange={(event=>setEmail(event.target.value))} name="email" placeholder="Email" className="input input-bordered text-title-secondary" />
                                     {errorEmail&&<label className="label">
-                                        <span className="label-text-alt text-pink-600">Votre email est obligatoire !</span>
+                                        <span className="label-text-alt text-error">Votre email est obligatoire !</span>
                                     </label>}  
                                 </div>
         
                                 <div className="form-control">
-                                    <textarea type="text" ref={dataRef} value={fmessage} onChange={(event=>setMessage(event.target.value))} name="message" placeholder="Saisie ton message" className="textarea textarea-bordered w-full resize-none rows-15 cols-70"/>
+                                    <textarea type="text" ref={dataRef} value={fmessage} onChange={(event=>setMessage(event.target.value))} name="message" placeholder="Saisie ton message" className="textarea textarea-bordered w-full resize-none rows-15 cols-70 text-title-secondary"/>
                                     {errorMessage&&<label className="label">
-                                        <span className="label-text-alt text-pink-600">Merci de saisir votre message !</span>
+                                        <span className="label-text-alt text-error">Merci de saisir votre message !</span>
                                     </label>}
                                 </div>
                                 <div className="form-control mt-6">
-                                    <button type = "submit" className="btn btn-primary">Envoyer</button>
+                                    <button type="submit" className="btn btn-primary">Envoyer</button>
                                 </div>
                             </div>
                         </div>
@@ -98,11 +98,11 @@ const Contact = () => {
 
             <dialog id="my_modal_1" className="modal">
                 <form method="dialog" className="modal-box">
-                    <h3 className="font-bold text-lg">Salut !</h3>
+                    <h3 className="font-bold text-lg text-title">Salut ! 😄 </h3>
                     <p className="py-4">Ton message a bien été envoyer, nous te répondrons dans les meilleurs délais</p>
                     <div className="modal-action">
                         {/* if there is a button in form, it will close the modal */}
-                        <button className="btn">Fermer</button>
+                        <button className="btn btn-primary">Fermer</button>
                     </div>
                 </form>
             </dialog>
