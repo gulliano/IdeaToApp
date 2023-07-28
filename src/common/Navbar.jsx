@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Logo from '/images/logo-1.png'
+
 const Navbar = () => {
     return (
         <div className="navbar bg-base-200 fixed z-50" id='Navbar'>
@@ -16,7 +18,7 @@ const Navbar = () => {
                         <li><a>CGV</a></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Une Idée, Une App</a>
+                <img src={Logo} width={80} height={80} alt="logo" />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
