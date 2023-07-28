@@ -4,7 +4,7 @@ import { useRef , useState } from 'react';
 
 
 
-const Conact = () => {
+const Contact = () => {
 
     const [errorNom, setErrorNom] = useState(false);
     const [errorPrenom, setErrorPrenom] = useState(false);
@@ -84,4 +84,4 @@ const Conact = () => {
     )
 }
 
-export default Conact
+export default Contact

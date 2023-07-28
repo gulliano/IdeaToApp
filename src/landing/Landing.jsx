@@ -1,28 +1,27 @@
-import React from 'react'
-import Hero from '../common/Hero'
-import Cta from '../common/Cta'
-import Content from '../common/Content'
-import Features from '../common/Features'
-import Team from '../common/Team'
-import Footer from '../common/Footer'
-import Gallery from '../common/Gallery'
-import Contact from '../common/Contact'
-import Navbar from '../common/Navbar'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import '../App.css';
+import Hero from '../common/Hero';
+import Contact from '../common/Contact';
 
-const Landing = () => {
+
+
+function App() {
+  // Initialisez AOS
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
+
+
   return (
     <>
-      <Navbar />
-      {/*<Hero />*/}
-      {/* <Cta /> */}
-      <Content />
-      {/*<Features />
-      <Gallery />
-      <Team />*/}
+      <Hero />
       <Contact />
-      <Footer />
+      
+
     </>
   )
 }
 
-export default Landing
+export default App
