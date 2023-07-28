@@ -30,7 +30,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div data-aos="fade-in" data-aos-delay="1500" className="navbar-end">
-                <a className="btn btn-secondary">Contact</a>
+                <a className="btn btn-outline btn-primary">Contact</a>
             </div>
         </div>
     )

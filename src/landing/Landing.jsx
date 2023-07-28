@@ -5,6 +5,7 @@ import '../App.css';
 import Hero from './Hero';
 import About from './About';
 import Presentation from './Presentation';
+import Team from './Team';
 import Contact from './Contact';
 
 
@@ -19,6 +20,7 @@ function App() {
       <Hero />
       <About/>
       <Presentation />
+      <Team />
       <Contact />
     </>
   )

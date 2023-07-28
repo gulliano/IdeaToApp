@@ -20,7 +20,7 @@ const Presentation = () => {
 
                     <p className="mb-4">Vous pouvez télécharger ici le document détaillant les condition d’organisation du concours.</p>
                 </div>
-                <div className="lg:mt-0 lg:col-span-5 lg:flex h-[70%]">
+                <div className="lg:mt-0 lg:col-span-5 lg:flex h-[70%] py-8 px-4">
                     <img src={Fyler01} alt="mockup" />
                 </div>
             </div>
