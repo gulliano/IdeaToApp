@@ -1,12 +1,13 @@
 import React , {useState} from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch , useSelector } from 'react-redux'
 import { plus,  addInscription } from '../../redux';
 
 const Email = () => {
   const dispatch = useDispatch() ;
+  const {inscription }  =  useSelector(state=> state) ;
 
-  const [email, setEmail] = useState('gustave')
-  const [prenom, setTelephone] = useState('gulliano')
+  const [email, setEmail] = useState('gustave@mail.com')
+  const [telephone, setTelephone] = useState('063600100')
 
   const [errEmail, setErrEmail] = useState(false)
   const [errTelephone, setErrTelephone] = useState(false)
@@ -14,8 +15,8 @@ const Email = () => {
   const handleSubmit = (event) => { 
     event.preventDefault() ;
     
- const { email , telephone} =  event.target ;
-  console.log('prenom :  ' ,event.target  ) ;
+    //const { email , telephone} =  event.target ;
+    console.log('prenom :  ' , inscription ) ;
 
 
    const info = { email : email, 
@@ -24,7 +25,7 @@ const Email = () => {
       }
 
    
-        console.log("infoStagiaire" , info) 
+      console.log("infoStagiaire" , info) 
       dispatch(addInscription(info)) ; 
       dispatch(plus())
 
@@ -41,6 +42,7 @@ const Email = () => {
 
   return (
     <div className="hero min-h-screen bg-base-200">
+  <form onSubmit={handleSubmit} >
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
       <h1 className="text-5xl font-bold">Si tu es sélectionné, il faudra te contacter!</h1>
@@ -54,9 +56,7 @@ const Email = () => {
           </label>
           <input type="text" value={email} onChange={event=>changeEmail(event)} placeholder="Email" className="input input-bordered" />
         
-          <label className="label hidden">
-           Une adresse email valide est obligatoire 
-          </label>
+          <label className="label hidden">Une adresse email valide est obligatoire</label>
           </div>
         <div className="form-control">
           <label className="label">
@@ -68,11 +68,12 @@ const Email = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button onClick={()=>dispatch(plus()) } className="btn btn-primary">Etape suivante</button>
+          <button  className="btn btn-primary">Etape suivante</button>
         </div>
       </div>
     </div>
   </div>
+  </form>
 </div>
   )
 }
