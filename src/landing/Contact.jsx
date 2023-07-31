@@ -50,7 +50,7 @@ const Contact = () => {
     return (
         <div className="App">
             <form onSubmit={submithandler}>
-                <div className="hero min-h-screen bg-base-200">
+                <div className="hero min-h-screen">
                     <div className="hero-content flex-col lg:flex-row-reverse">
                         <div className="text-center min-w-lg lg:text-left">
                             <h1 className="text-5xl font-bold text-title">Contactez-nous !</h1>
