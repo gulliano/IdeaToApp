@@ -54,7 +54,8 @@ const Contact = () => {
                     <div className="hero-content flex-col lg:flex-row-reverse">
                         <div className="text-center min-w-lg lg:text-left">
                             <h1 className="text-5xl font-bold text-title">Contactez-nous !</h1>
-                            <p className="py-6">Envie de plus d’explications ? Ou de précisions sur un élément ? N’hésite pas, envoie nous un message via le formulaire ci-contre pour des éclaircissements</p>
+                            <p className="py-6">Envie de plus d’explications ou de précisions sur le concours ? <br /> <br />
+                             N’hésite pas, envoie nous un message via le formulaire ci-contre pour des éclaircissements</p>
                         </div>
                         <div className="card flex-shrink-0 w-full max-w-lg min-h-fit shadow-2xl bg-base-100">
                             <div className="card-body">

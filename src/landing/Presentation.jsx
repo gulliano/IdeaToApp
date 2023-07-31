@@ -14,11 +14,11 @@ const Presentation = () => {
 
                     <p className="mb-4">C'est pour répondre à ces besoins que nous avons mis en place le concours « Idea to App » ! </p>
 
-                    <p className="mb-4">Ainsi Nous donnerons la possibilité à toute personne désirant mettre en place une application innovante la possibilité de présenter et défendre sa vision, son projet afin de pouvoir le réaliser gratuitement.</p>
+                    <p className="mb-4">Ainsi, nous donnerons, au cours de notre cursus, à toute personne désirant mettre en place une application innovante la possibilité de participer à notre projet pédagogique en venant présenter et défendre sa vision, son projet afin de pouvoir le réaliser gratuitement.</p>
 
                     <p className="mb-4">Suite à cela nos membres sélectionnerons minutieusement une liste de projets sur lesquels ils travaillerons en équipe en prenant en compte notamment le potentiel d’innovation la faisabilité et le sérieux du projet.</p>
 
-                    <p className="mb-4">Vous pouvez télécharger ici le document détaillant les condition d’organisation du concours.</p>
+                    {/* <p className="mb-4">Vous pouvez télécharger ici le document détaillant les condition d’organisation du concours.</p> */}
                 </div>
                 <div className="lg:mt-0 lg:col-span-5 lg:flex h-[70%] py-8 px-4">
                     <img src={Fyler01} alt="mockup" />

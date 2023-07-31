@@ -7,8 +7,8 @@ const Navbar = () => {
     return (
         <div className="navbar bg-base-100 fixed z-50" id='Navbar'>
             <div className="navbar-start">
-
-                <img data-aos="fade-in" data-aos-delay="1500" src={Logo} width={80} height={80} alt="logo" />
+            <Link to="/"><img data-aos="fade-in" data-aos-delay="1500" src={Logo} width={80} height={80} alt="logo" /></Link>
+                
             </div>
             <div className="navbar-center hidden lg:flex">
 

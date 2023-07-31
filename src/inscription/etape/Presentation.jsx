@@ -62,7 +62,7 @@ const Presentation = () => {
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">Pour commencer présente toi ?</h1>
-            <p className="py-6">Nous devons savoir qui tu es !</p>
+            <p className="py-6 text-2xl">Nous devons savoir qui tu es !</p>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <div className="card-body">

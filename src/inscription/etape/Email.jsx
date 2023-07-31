@@ -17,8 +17,8 @@ const Email = () => {
     event.preventDefault();
 
     //const { email , telephone} =  event.target ;
-    console.log('prenom :  ', inscription);
-    if (validateEmail(email) == false) {
+    
+    if (validateEmail(email) == null  ) {
       setErrEmail(true)
     }
     if (telephone == '') {
@@ -29,9 +29,9 @@ const Email = () => {
       email: email,
       telephone: telephone,
     }
-
-    if (validateEmail(email) == true && telephone != '') {
-      console.log("infoStagiaire", info)
+  //  console.log('prenomc :  ', telephone , email,  validateEmail(email) , errEmail , errTelephone );
+    if (validateEmail(email) != null   && telephone != '') {
+     // console.log("infoStagiaire", info)
       dispatch(addInscription(info));
       dispatch(plus())
     }
@@ -53,7 +53,7 @@ const Email = () => {
       <form onSubmit={handleSubmit} >
         <div className="flex items-center justify-center">
           <ul className="steps">
-            <li className="step step-primary">Présentation </li>
+            <li className="step step-primary">Présentation</li>
             <li className="step step-primary">Contact</li>
             <li className="step">Motivation</li>
             <li className="step">Le projet</li>
@@ -61,31 +61,29 @@ const Email = () => {
         </div>
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold">Si tu es sélectionné, il faudra te contacter!</h1>
-            <p className="py-6">Une adresse email valide est obligatoire.</p>
+            <h1 className="text-5xl font-bold">Si tu es sélectionné(e), il faudra te contacter!</h1>
+            <p className="py-6 text-2xl">Une adresse email valide est obligatoire.</p>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <div className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Ton adresse Email {errEmail}</span>
+                  <span className="label-text">Ton adresse Email </span>
                 </label>
                 <input type="text" value={email} onChange={event => changeEmail(event)} placeholder="Email" className="input input-bordered" />
-
-                {errEmail && <label className="label hidden text-red-500">Une adresse email valide est obligatoire</label>}
+            
+                {errEmail&&<label className="label  text-red-500">Une adresse email valide est obligatoire</label>}
               </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Ton téléphone</span>
                 </label>
                 <input type="text" value={telephone} onChange={event => changeTelephone(event)} placeholder="06XXXXXXX" className="input input-bordered" />
-                {errTelephone && <label className="label hidden text-red-500">Un numéro de téléphone est obligatoire</label>}
-                <label className="label hidden">
-                  Tu dois saisir ton téléphone
-                </label>
+                {errTelephone&&<label className="label  text-red-500">Un numéro de téléphone est obligatoire</label>}
+              
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Etape suivante</button>
+                <button  type='submit' className="btn btn-primary">Etape suivante</button>
               </div>
             </div>
           </div>
