@@ -22,7 +22,7 @@
 
 /* Présentation début */
 #Presentation img {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -32,3 +32,11 @@
 }
 
 /* Présentation fin */
+
+/* Navbar début */
+
+.dropdown-content {
+    right: 20px;
+}
+
+/* Navbar fin */
