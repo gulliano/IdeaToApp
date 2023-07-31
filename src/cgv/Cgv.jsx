@@ -22,7 +22,7 @@ const Cgv = () => {
         </div>
         </div>
 
-    <div className="Article  ">
+    <div className="Article ">
         <div className=" mt-12 py-6 p-40 max-md:p-10">
             <h1 className="font-bold text-2xl pt-5 pb-5 flex justify-center text-center">
                 Article 1 : Organisateur 
